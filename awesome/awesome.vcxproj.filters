@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="application_win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rapidjson\allocators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\document.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\encodedstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\encodings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\error\en.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\error\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\filereadstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\filewritestream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\biginteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\diyfp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\dtoa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\ieee754.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\itoa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\meta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\pow10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\strfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\strtod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\swap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\memorybuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\memorystream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\msinttypes\inttypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\msinttypes\stdint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\prettywriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\rapidjson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\stringbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="js_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="method_dispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.html" />
+    <None Include="awesomium.dll" />
+    <None Include="application_mac.mm" />
+    <None Include="avcodec-53.dll" />
+    <None Include="avformat-53.dll" />
+    <None Include="avutil-51.dll" />
+    <None Include="awesomium_process.exe" />
+    <None Include="awesomium_process.pdb" />
+    <None Include="awesomium_symbols.pdb" />
+    <None Include="icudt.dll" />
+    <None Include="inspector.pak" />
+    <None Include="libEGL.dll" />
+    <None Include="libGLESv2.dll" />
+    <None Include="view_mac.mm" />
+    <None Include="xinput9_1_0.dll" />
+    <None Include="Levels\0.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="giphy.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="drake.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

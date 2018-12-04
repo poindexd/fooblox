@@ -1,0 +1,21 @@
+﻿Build started 10/25/2015 12:48:22 PM.
+     1>Project "c:\awesome\awesome\awesome\awesome.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Software\opencv\build\include /I"C:\Software\Python\Python35-32\include" /I"C:\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.5.1\include" /Zi /nologo /W3 /WX- /sdl /Od /Oy- /D UNICODE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\awesome\awesome\awesome\main.h(111): warning C4129: '=' : unrecognized character escape sequence
+     1>c:\awesome\awesome\awesome\main.h(113): warning C4129: 'p' : unrecognized character escape sequence
+     1>c:\awesome\awesome\awesome\main.h(144): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\awesome\awesome\awesome\main.h(145): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\awesome\awesome\awesome\main.h(219): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\awesome\awesome\awesome\main.h(229): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\awesome\awesome\Debug\awesome.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Software\opencv\build\x86\vc12\lib /LIBPATH:C:\awesome\awesome\awesome\Awesomium_include /LIBPATH:"C:\Software\Python\Python35-32\libs" /LIBPATH:"C:\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.5.1\build\lib" awesomium.lib python35.lib opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_nonfree2410d.lib opencv_objdetect2410d.lib opencv_ocl2410d.lib opencv_photo2410d.lib opencv_stitching2410d.lib opencv_superres2410d.lib opencv_ts2410d.lib opencv_video2410d.lib opencv_videostab2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\awesome\awesome\Debug\awesome.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\awesome\awesome\Debug\awesome.lib" /MACHINE:X86 Debug\application_win.obj
+         Debug\main.obj
+         Debug\view_win.obj
+         awesome.vcxproj -> c:\awesome\awesome\Debug\awesome.exe
+     1>Done Building Project "c:\awesome\awesome\awesome\awesome.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.98

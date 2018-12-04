@@ -1,0 +1,15 @@
+﻿Build started 10/7/2015 2:03:06 AM.
+     1>Project "c:\awesome\awesome\awesome\awesome.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt application_win.cc main.cpp view_win.cc
+         application_win.cc
+     1>application_win.cc(3): fatal error C1083: Cannot open include file: 'Awesomium/WebCore.h': No such file or directory
+         main.cpp
+     1>c:\awesome\awesome\awesome\method_dispatcher.h(4): fatal error C1083: Cannot open include file: 'Awesomium/WebCore.h': No such file or directory
+         view_win.cc
+     1>view_win.cc(2): fatal error C1083: Cannot open include file: 'Awesomium/WebCore.h': No such file or directory
+     1>Done Building Project "c:\awesome\awesome\awesome\awesome.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20

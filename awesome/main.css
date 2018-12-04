@@ -1,0 +1,88 @@
+h1{
+	font-size: 4em;
+}
+h2{
+    font-size:2em;
+}
+p{
+	font-size: 1.25em;
+}
+pre{
+	font-size: 1.5em;
+}
+.row{
+	margin-bottom: 0px;
+}
+
+.b{
+	width:75px;
+	height:75px;
+	display: inline-block;
+	text-align: center;
+	line-height: 75px;
+	font-size: 1.5em;
+}
+.brow{
+	clear: both;
+	padding-bottom: 6px;
+}
+.ctrl{
+	background-color: #FFED8B;
+}
+.var{
+	background-color: #A3E0FA;
+}
+.num{
+	background-color: #FED17B;
+}
+.func{
+	background-color: #9AFADE;
+}
+.blank{
+	color:white;
+}
+
+.hljs, .output_window{
+	background: #ffffff;
+}
+.output_window{
+	padding:15px;
+}
+
+#success, #won{
+     position:absolute;
+     width:800px;
+     height:500px;
+     z-index:15;
+     top:50%;
+     left:50%;
+     margin:-250px 0 0 -400px;
+     text-align:center;
+}
+
+#loading{
+     position:absolute;
+     width:800px;
+     height:200px;
+     z-index:15;
+     top:50%;
+     left:50%;
+     margin:-100px 0 0 -400px;
+     text-align:center;
+     z-index:15;
+}
+
+#fade{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.7);
+    z-index:10;
+}
+
+.pad{
+    margin:20px;
+    padding:20px;
+}

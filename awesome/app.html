@@ -1,0 +1,136 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/vs.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>blocks</title>
+</head>
+<body class='container grey lighten-4'>
+    <div class='row'>
+        <div class='col l11'>
+            <div class="progress" style='padding-top:10px;margin-top:37px'>
+                <div class="determinate" style="width: 10%"></div>
+            </div>
+        </div>
+        <div class='col l1'>
+            <p id="progress_text">1/10</p>
+        </div>
+    </div>
+    <div class='row'>
+
+        <div class='col l6'>
+            <div class="blue lighten-4 pad">
+                <h1 id="title"></h1>
+                <p id="objective"></p>
+                <!--
+        <h2>Hint</h2>
+        <p>You may want to use these blocks</p>
+        <div class='brow'>
+            <div class='b ctrl'>for</div>
+            <div class='b var'>i</div>
+            <div class='b ctrl'>in</div>
+            <div class='b var'>x</div>
+            <div class='b func'>print</div>
+        </div>
+            -->
+            </div>
+            </div>
+
+        <div class='col l6'>
+            <div class="yellow lighten-4 pad">
+                <h2>Output</h2>
+                <pre><code id="rendered" class='python'></code></pre>
+
+                <pre id="output" class='output_window'></pre>
+            </div>
+            <div class="orange lighten-4 pad">
+            <h2>Correct</h2>
+            <pre id="correct" class='output_window'></pre>
+                </div>
+
+            <!--
+            <a class="waves-effect waves-light btn-large">Show Answer</a>
+            <a class="waves-effect waves-light btn-large">Skip</a>
+                -->
+        </div>
+    </div>
+    <div id="success" class="teal lighten-1 white-text" hidden>
+        <h1>Success!</h1>
+        <img src="giphy.gif" />
+    </div>
+    <div id="won" class="teal lighten-1 white-text" hidden>
+        <h1>You cleared all the levels!</h1>
+        <img src="drake.gif" />
+    </div>
+    <!--
+    <div id="loading">
+        <h1>Loading...</h1>
+         <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+    <div id="fade">
+    </div>
+        -->
+    <script src="diff.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script type='text/javascript'>
+        //var correct = '0 1 2 3 4 5 6 7 8 9';
+        //var output = '1 2 3 4 5 6 7 8 9 10';
+
+        /*
+		var diff = JsDiff.diffChars(correct, output);
+
+		diff.forEach(function(part){
+  // green for additions, red for deletions
+  // black for common parts
+  var color = part.added ? 'green' :
+  part.removed ? 'red' : 'black';
+  var span = document.createElement('span');
+  span.style.color = color;
+  span.appendChild(document.createTextNode(part.value));
+  $('#output').append(span);
+});
+*/
+        //$('#correct').append(correct);
+
+        function loadLevel(number, title, objective, correct) {
+            $('.determinate').width((number / 2) * 100 + '%');
+            $('#progress_text').text((number + 1) + "/2");
+            $('#title').text(title);
+            $('#objective').html(objective);
+            $('#correct').text(correct);
+            $('#loading').hide();
+            return true;
+        }
+
+        function updateRendered(s) {
+            $('#rendered').text(s);
+        }
+
+        function updateOutput(s) {
+            $('#output').text(s);
+        }
+
+        function levelCompleted() {
+            $('#success').show(1000);
+            setTimeout(function () {
+                $('#success').hide(1000);
+            }, 5250);
+        }
+
+        function wonGame() {
+            setTimeout(function () {
+                $('#won').show(1000);
+                setTimeout(function () {
+                    $('#won').hide(1000);
+                }, 5250);
+            }, 5250);
+        }
+    </script>
+</body>
+</html>

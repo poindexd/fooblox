@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BBCFF59B-BC83-4909-81A8-72EAEF348AD2}</ProjectGuid>
+    <RootNamespace>awesome</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Software\opencv\build\include;C:\Software\Python\Python35-32\include;$(AWE_DIR)include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Software\opencv\build\x86\vc12\lib;C:\awesome\awesome\awesome\Awesomium_include;C:\Software\Python\Python35-32\libs;$(AWE_DIR)build\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>awesomium.lib;python35.lib;opencv_calib3d2410d.lib;opencv_contrib2410d.lib;opencv_core2410d.lib;opencv_features2d2410d.lib;opencv_flann2410d.lib;opencv_gpu2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;opencv_legacy2410d.lib;opencv_ml2410d.lib;opencv_nonfree2410d.lib;opencv_objdetect2410d.lib;opencv_ocl2410d.lib;opencv_photo2410d.lib;opencv_stitching2410d.lib;opencv_superres2410d.lib;opencv_ts2410d.lib;opencv_video2410d.lib;opencv_videostab2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="application_win.cc" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="view_win.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application.h" />
+    <ClInclude Include="js_delegate.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="method_dispatcher.h" />
+    <ClInclude Include="rapidjson\allocators.h" />
+    <ClInclude Include="rapidjson\document.h" />
+    <ClInclude Include="rapidjson\encodedstream.h" />
+    <ClInclude Include="rapidjson\encodings.h" />
+    <ClInclude Include="rapidjson\error\en.h" />
+    <ClInclude Include="rapidjson\error\error.h" />
+    <ClInclude Include="rapidjson\filereadstream.h" />
+    <ClInclude Include="rapidjson\filewritestream.h" />
+    <ClInclude Include="rapidjson\internal\biginteger.h" />
+    <ClInclude Include="rapidjson\internal\diyfp.h" />
+    <ClInclude Include="rapidjson\internal\dtoa.h" />
+    <ClInclude Include="rapidjson\internal\ieee754.h" />
+    <ClInclude Include="rapidjson\internal\itoa.h" />
+    <ClInclude Include="rapidjson\internal\meta.h" />
+    <ClInclude Include="rapidjson\internal\pow10.h" />
+    <ClInclude Include="rapidjson\internal\stack.h" />
+    <ClInclude Include="rapidjson\internal\strfunc.h" />
+    <ClInclude Include="rapidjson\internal\strtod.h" />
+    <ClInclude Include="rapidjson\internal\swap.h" />
+    <ClInclude Include="rapidjson\memorybuffer.h" />
+    <ClInclude Include="rapidjson\memorystream.h" />
+    <ClInclude Include="rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="rapidjson\pointer.h" />
+    <ClInclude Include="rapidjson\prettywriter.h" />
+    <ClInclude Include="rapidjson\rapidjson.h" />
+    <ClInclude Include="rapidjson\reader.h" />
+    <ClInclude Include="rapidjson\stringbuffer.h" />
+    <ClInclude Include="rapidjson\writer.h" />
+    <ClInclude Include="view.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.html" />
+    <None Include="application_mac.mm" />
+    <None Include="avcodec-53.dll" />
+    <None Include="avformat-53.dll" />
+    <None Include="avutil-51.dll" />
+    <None Include="awesomium.dll" />
+    <None Include="awesomium_process.exe">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </None>
+    <None Include="awesomium_process.pdb" />
+    <None Include="awesomium_symbols.pdb" />
+    <None Include="icudt.dll" />
+    <None Include="inspector.pak" />
+    <None Include="Levels\0.json" />
+    <None Include="libEGL.dll" />
+    <None Include="libGLESv2.dll" />
+    <None Include="view_mac.mm" />
+    <None Include="xinput9_1_0.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="drake.gif" />
+    <Image Include="giphy.gif" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

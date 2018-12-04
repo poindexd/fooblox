@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Array access",
+        "objective": "<p>The way to access elements in an array is to use square brackets. Put the number of the element you want to access inside of the brackets. For example:</p><pre><code class='python'>z=[1,2,3]\nprint(z[2])</code></pre><p>This code will print the number 3. Remember that arrays are zero-indexed, which means the first element in the array has an index of 0, not 1.</p><p>Try it by printing 2.</p>",
+        "given": "x = [5, 2, 3]\nj = 1 #given\n\n",
+        "correct": "print(2)"
+    },
+    {
+        "title": "For loop",
+        "objective": "<p>A for loop is used to run the same code multiple times. For now, we will iterate through an array. For example:<pre><code class='python'>for i in range(10):\n\tprint(i)</code></pre><p>This code will print the integers 0-9.</p><p>Note:In python, a tab is used for all lines in a for loop, so indent the second line by 1 block.</p><p>Print the numbers 0 through 2</p>",
+        "given": "k = range(3) #given\n\n",
+        "correct": "for i in range(3):\n\tprint(i)\n"
+    },
+
+    {
+        "title": "Square it",
+        "objective": "<p>To use an exponent in python, use two asterisks. For example: <pre><code class='python'>print 2**2\nprint 2**3</code></pre><p>This code will print 4, 8.</p><p>Use ** to print 25</p>",
+        "given": "x = 5\ny = 2 #given\n\n",
+        "correct": "print x**y"
+    },
+    {
+        "title": "While loop",
+        "objective": "Print 3 zeros",
+        "given": "i = 0\nj = 3 #given\n\n",
+        "correct": "while i<j:\n\tprint(i)\n\ti+=1"
+    }
+]
